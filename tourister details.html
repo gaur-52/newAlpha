@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Details | Welcome to ALPHA TOURISM</title>
+    <!--global css starts-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!--end of global css-->
+
+    <!--page level css starts-->
+    <link type="text/css" rel="stylesheet" href="vendors/icheck/skins/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/tourister-details.css">
+    <!--end of page level css-->
+</head>
+
+<body>
+<div class="container">
+    <!--Content Section Start -->
+    <div class="row">
+        <div class="box animation flipInX">
+            <img src="images/ALPHA1.jpeg" alt="logo" class="img-responsive mar">
+            <h3 class="text-primary">Basic Details</h3>
+            <form action="details.php" method="post">
+                <div class="form-group">
+                    <tr><td><label for="Joined">Joined AS</label></td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <td><label class="sr-only"></label>
+                    <label class="radio-inline">
+                        <input type="radio" name="Radio1" id="inlineRadio1" value="option1"> GUIDE
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="Radio1" id="inlineRadio2" value="option2"> TOURIST
+                    </label></td></tr>
+                </div>
+                <div class="form-group">
+                    <tr><td><label for="name">Name</label></td>
+                   <td> <label class="sr-only"></label>
+                    <input type="text" class="form-control" id="firstname" name="name" placeholder="Firstname"></td></tr>
+                </div>
+                <div class="form-group">
+                    <tr><td><label for="Address">State</label></td>
+                    <td><label class="sr-only"></label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter Full Address"></td><tr>
+                </div>
+                <div class="form-group">
+                    <tr><td><label for="Email">Email</label></td>
+                    <td><label class="sr-only"></label>
+                    <input type="email" class="form-control" id="Email" name="email" placeholder="Email"></td></tr>
+                </div>
+                <div class="form-group">
+                    <tr><td><label for="number">Contact NO.</label></td>
+                    <label class="sr-only"></label>
+                    <input type="number" class="form-control" id="number"  neme="number" placeholder="+ country code..">
+                </div>
+                
+                <div class="form-group">
+                    <tr><td><label for="date">D.O.B</label></td>
+                    <label class="sr-only"></label>
+                    <input type="datetime-local" class="form-control" id="date" name="date">
+                </div>
+                
+                <div class="form-group">
+                    <tr><td><label for="Gender">Gender</label></td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <td><label class="sr-only"></label>
+                    <label class="radio-inline">
+                        <input type="radio" name="Radio2" id="inlineRadio1" value="option1"> Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="Radio2" id="inlineRadio2" value="option2"> Female
+                    </label></td></tr>
+                </div>
+                <div class="form-group">
+                    
+                    <label class="sr-only"></label>
+                    <textarea class="comment" rows="7" cols="40" name="CM" placeholder="Enter Interested Spots"></textarea>
+                </div>
+                <div class="form-group">
+                    <tr><td><label for="id">Upload id proof</label></td>
+                    <td><label class="sr-only"></label>
+                    <input type="file"  name="F1" required="required"></td></tr>
+                </div>
+               
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" checked>  I accept <a href="#"> Terms and Conditions</a>
+                    </label>
+                </div>
+                <input type="submit" class="btn btn-block btn-primary" value="submit">
+            </form>
+        </div>
+    </div>
+    <!-- //Content Section End -->
+</div>
+<!--global js starts-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--global js end-->
+<script type="text/javascript" src="vendors/icheck/icheck.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input[type='checkbox'],input[type='radio']").iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue'
+        });
+    });
+</script>
+</body>
+
+</html>
